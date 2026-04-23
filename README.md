@@ -14,17 +14,16 @@ The server continues to accept and process incoming connections until it is manu
 
 #### Instructions: 
 1. Run: 
-{
+
     make clean
     make
     ./server
-}
+
 should get output: 
-{
+
     Server listening on port 8080
-}
+
 
 2. Go to local address to view page as a client: 
-{
+
     192.168.xxx.xxx:8080
-}
