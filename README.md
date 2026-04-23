@@ -11,3 +11,20 @@ The server continues to accept and process incoming connections until it is manu
 1. After re-compiling and restarting server after every change, I got error `bind failed: address already in use`. I was confused because I've already killed every process that uses port 8080. After some [research](https://stackoverflow.com/questions/15198834/bind-failed-address-already-in-use), I found out that "the server still owns the socket when it starts and terminates quickly". So I add `SO_REUSEADDR` to the socket config, which "tells the server that even if this port is busy, go ahead and reuse it anyway".
 
 2. After increasing buffer to 10MiB, I got error `bus error` every time I started the server. After some research, I found out that the stack memory allocated for each thread is usually limited. So I allocate the buffers on the heap instead of the stack by using `malloc()` and `free()`.
+
+#### Instructions: 
+1. Run: 
+{
+    make clean
+    make
+    ./server
+}
+should get output: 
+{
+    Server listening on port 8080
+}
+
+2. Go to local address to view page as a client: 
+{
+    192.168.xxx.xxx:8080
+}
