@@ -1,0 +1,31 @@
+
+
+
+Tasks: 
+
+need to test at home with a private network to get webpage running
+
+current max number of clients is 10, maybe set a waite queue to join if more than 10 clients attempt to join
+
+add way to indicate 2 types of clients, reader and writer, then access a reader and writer html page
+
+thinking of implementing a dummy "hotel" room reservation service where you can reserver a room for 0-100 seconds, then use reader-writer prolbem to prioritize, 
+
+create an automated "testing" version of readers/writers that randomly selects from a list of hotel rooms for a random length of time, 50/50 chance of being a reader or writer
+
+
+Breaking up Work Between Two People: 
+
+I could work on setting up the two types of clients, then we could work simultaneously with one working on the room reservation service pages and the other works on the reader-writer logic or something like that. 
+
+
+
+
+
+
+
+
+
+Cited Sources: 
+
+Used https://github.com/JeffreytheCoder/Simple-HTTP-Server to start with a server using C. This creates a simple server that can accept multiple clients as threads using C, and has a single webpage. It doesn't have a way to end the program, or any other features. Plan to add more reader/writer permissions and thread handling. 
