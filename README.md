@@ -14,10 +14,9 @@ The server continues to accept and process incoming connections until it is manu
 
 #### Instructions: 
 1. Run: 
-
-    make clean
-    make
-    ./server
+    `make clean`
+    `make`
+    `./server`
 
 should get output: 
 
@@ -26,4 +25,6 @@ should get output:
 
 2. Go to local address to view page as a client: 
 
-    192.168.xxx.xxx:8080
+    `192.168.xxx.xxx:8080`
+
+You'll be using the IP address for your specific PC. You can view this in network settings. You might have to work with your firewall to allow port 8080, especially if running this on a public network. 
