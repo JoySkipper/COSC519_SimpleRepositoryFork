@@ -25,6 +25,6 @@ should get output:
 
 2. Go to local address to view page as a client: 
 
-    `192.168.xxx.xxx:8080`
+    `http://localhost:8080/home.html`
 
 You'll be using the IP address for your specific PC. You can view this in network settings. You might have to work with your firewall to allow port 8080, especially if running this on a public network. 
